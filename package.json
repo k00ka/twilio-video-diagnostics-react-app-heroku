@@ -30,7 +30,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject",
@@ -41,7 +41,9 @@
     "test:ci:serverless": "jest -c jest.serverless.config.js --ci --runInBand",
     "serverless:deploy": "npm run build && node serverless/scripts/deploy.js",
     "serverless:remove": "node serverless/scripts/remove.js",
-    "serverless:list": "node serverless/scripts/list.js"
+    "serverless:list": "node serverless/scripts/list.js",
+    "dev": "react-scripts start",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": [
