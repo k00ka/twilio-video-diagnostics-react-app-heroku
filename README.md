@@ -38,7 +38,16 @@ This application demonstrates a diagnostics tool for testing a participant's abi
 ## Install Dependencies
 
 Run `npm install` to install all the dependencies from NPM.
-
+## Deploy the App on heroku
+There are two ways to create an app on heroku by login or by heroku cli
+I am using heroku CLI
+ git clone https://github.com/jeffss99/twilio-video-diagnostics-react-app-heroku.git
+ $ heroku login
+ $ heroku create
+ git remote add heroku your_heroku_git_origin
+ heroku config:set ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ heroku config:set AUTH_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ heroku config:set VIDEO_IDENTITY=test_identity
 ## Deploy the App
 
 Before deploying the app, add your Twilio Account SID and Auth Token to a `.env` file (see [.env.example](.env.example) for an example). The app is deployed to Twilio with a single command:
