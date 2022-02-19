@@ -41,7 +41,7 @@ Run `npm install` to install all the dependencies from NPM.
 ## Deploy the App on heroku
 There are two ways to create an app on heroku by login or by heroku cli
 I am using heroku CLI
- git clone https://github.com/jeffss99/twilio-video-diagnostics-react-app-heroku.git
+ $ git clone https://github.com/jeffss99/twilio-video-diagnostics-react-app-heroku.git
  $ heroku login
  $ heroku create
  git remote add heroku your_heroku_git_origin
